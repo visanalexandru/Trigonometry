@@ -61,6 +61,9 @@ namespace Trigonometry {
     //Add two angles.
     Angle operator+(const Angle &a, const Angle &b);
 
+    //Subtract two angles.
+    Angle operator-(const Angle &a, const Angle &b);
+
     // Compare angles - greater.
     bool operator>(const Angle &a, const Angle &b);
 
