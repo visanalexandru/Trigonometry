@@ -72,6 +72,12 @@ namespace Trigonometry {
 
     // Compare angles - smaller or equal.
     bool operator<=(const Angle &a, const Angle &b);
+
+    // Checks if the two angles are equal.
+    bool operator==(const Angle &a, const Angle &b);
+
+    //Checks if the two angles are not equal.
+    bool operator!=(const Angle &a, const Angle &b);
 }
 
 #endif //ANGLE_ANGLE_H

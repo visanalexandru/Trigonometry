@@ -77,4 +77,12 @@ namespace Trigonometry {
     bool operator<=(const Angle &a, const Angle &b) {
         return a.radians() <= b.radians();
     }
+
+    bool operator==(const Angle &a, const Angle &b) {
+        return a.radians() == b.radians();
+    }
+
+    bool operator!=(const Angle &a, const Angle &b) {
+        return a.radians() != b.radians();
+    }
 }
