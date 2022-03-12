@@ -56,11 +56,22 @@ namespace Trigonometry {
 
         //Returns the sine of the angle.
         double sin() const;
-
-        friend Angle operator+(const Angle &a, const Angle &b);
     };
 
+    //Add two angles.
     Angle operator+(const Angle &a, const Angle &b);
+
+    // Compare angles - greater.
+    bool operator>(const Angle &a, const Angle &b);
+
+    // Compare angles - greater or equal.
+    bool operator>=(const Angle &a, const Angle &b);
+
+    // Compare angles - smaller.
+    bool operator<(const Angle &a, const Angle &b);
+
+    // Compare angles - smaller or equal.
+    bool operator<=(const Angle &a, const Angle &b);
 }
 
 #endif //ANGLE_ANGLE_H
