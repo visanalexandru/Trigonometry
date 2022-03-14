@@ -55,25 +55,25 @@ TEST_CASE("Angle construction from radians") {
         REQUIRE(equal(b.radians(), 1.703954693, EPSILON));
         REQUIRE(b.degrees() == 97);
         REQUIRE(b.minutes() == 37);
-        REQUIRE(b.seconds() == 45);
+        REQUIRE(b.seconds() == 46);
 
         Trigonometry::Angle c(53);
         REQUIRE(equal(c.radians(), 2.734517543, EPSILON));
         REQUIRE(c.degrees() == 156);
         REQUIRE(c.minutes() == 40);
-        REQUIRE(c.seconds() == 34);
+        REQUIRE(c.seconds() == 35);
 
         Trigonometry::Angle x(1234);
         REQUIRE(equal(x.radians(), 2.495679793, EPSILON));
         REQUIRE(x.degrees() == 142);
         REQUIRE(x.minutes() == 59);
-        REQUIRE(x.seconds() == 30);
+        REQUIRE(x.seconds() == 31);
 
         Trigonometry::Angle y(90879);
         REQUIRE(equal(y.radians(), 5.290902262, EPSILON * 100));
         REQUIRE(y.degrees() == 303);
         REQUIRE(y.minutes() == 8);
-        REQUIRE(y.seconds() == 46);
+        REQUIRE(y.seconds() == 47);
 
         Trigonometry::Angle d(-10);
         REQUIRE(equal(d.radians(), 2.56637061436, EPSILON));

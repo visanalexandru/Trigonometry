@@ -6,7 +6,7 @@
 
 namespace Trigonometry {
     unsigned Angle::get_total_seconds() const {
-        return floor(rad * DEG_PER_RAD * ARC_SEC_PER_DEG);
+        return (unsigned) round(rad * DEG_PER_RAD * ARC_SEC_PER_DEG);
     }
 
     double Angle::adjust_angle(double radians) {
