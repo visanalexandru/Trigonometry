@@ -7,6 +7,7 @@
 
 #include"Angle.h"
 #include<algorithm>
+#include<iostream>
 
 namespace Trigonometry {
 
@@ -39,6 +40,9 @@ namespace Trigonometry {
 
         //Checks if the triangle is acute.
         bool acute() const;
+
+        //Outputs to the console various facts about the triangle given the smallest side.
+        void print(double smallest_side) const;
 
     };
 
