@@ -48,8 +48,7 @@ namespace Trigonometry {
     }
 
     void Triangle::print(double smallest_side) const {
-        std::cout << "Valoarea unghilui opus cele mai mici laturi este " << smallestAngle().degrees() << "º "
-                  << smallestAngle().minutes() << "' " << smallestAngle().seconds() << "\"" << std::endl;
+        std::cout << "Valoarea unghilui opus cele mai mici laturi este " << smallestAngle() << std::endl;
         Sides s = sides(smallest_side);
         std::cout << "Lungimile laturilor sunt: " << s.a << " " << s.b << " " << s.c << std::endl;
         std::cout << "Aria triunghiului este: " << area(smallest_side) << std::endl;

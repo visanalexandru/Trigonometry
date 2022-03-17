@@ -89,4 +89,9 @@ namespace Trigonometry {
     bool operator!=(const Angle &a, const Angle &b) {
         return a.radians() != b.radians();
     }
+
+    std::ostream &operator<<(std::ostream &os, const Angle &angle) {
+        os << angle.degrees() << "º " << angle.minutes() << "' " << angle.seconds() << "\"";
+        return os;
+    }
 }

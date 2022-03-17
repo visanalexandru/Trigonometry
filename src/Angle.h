@@ -6,6 +6,7 @@
 #define ANGLE_ANGLE_H
 
 #include<cmath>
+#include<iostream>
 
 namespace Trigonometry {
 
@@ -81,6 +82,9 @@ namespace Trigonometry {
 
     //Checks if the two angles are not equal.
     bool operator!=(const Angle &a, const Angle &b);
+
+    // Operator overload for sending angle to ostream.
+    std::ostream &operator<<(std::ostream &os, const Angle &angle);
 }
 
 #endif //ANGLE_ANGLE_H
